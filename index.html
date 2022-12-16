@@ -4,31 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style></style>
+    <style>
+      html {
+          background-image: url(/images/car.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+      }
+      header{display: flex;}
+  </style>
     <title>AUTO</title>
   </head>
 
   <body>
+    <header>
+<nav> <a href="/pages/register/index.html"><input type="button" value="Регистрация"></a></nav><nav> <a href="/pages/search/index.html"><input type="button" value="Поиск"></a></nav>
+  </header>
     <div>
       <form action="https://fom.in.ua/echo" method="get">
         <p>
           <label for="email">
-            Login
-            <input type="text" name="email" />
+            
+            <input type="text" name="email"  />
+            Логин
             <br />
           </label>
           <label for="password">
-            Password
+            
             <input type="password"  name="password"/>
+            Пароль
             <br />
           </label>
           <label for="savepassword">
-            Запомнить пароль
+           Запомнить пароль
             <input type="checkbox" name="savepassword"/>
           </label>
           <br />
           <input type="submit" value="Войти" />
-          <input type="reset" value="Очистить" />
+          <input type="reset" value="Очистить" /><br>
+          
         </p>
       </form>
     </div>

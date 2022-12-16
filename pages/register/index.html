@@ -4,27 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html {
+          background-image: url(/images/car.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+      }
+      header{margin-bottom: 10px;}
+  </style>
     <title>Register</title>
   </head>
   <body>
+    <header>
+      <nav> <a href="/index.html"><input type="button" value="На главную"></a></nav>
+  </header>
     <div>
-      <form action="https://fom.in.ua/echo">
-        <p>
+
+      <form action="https://fom.in.ua/echo" method="get">
+        
           <label for="email"> 
-            Почта
+            
             <input type="email" name="email">
+            Почта
           </label><br>
           <label for="password">
-            Пароль
+            
             <input type="password" name="password">
+            Пароль
           </label><br>
           <label for="retry-password">
-            Подтверждение  пароль
+            
             <input type="password" name="retry-password">
-          </label>
+            Подтверждение  пароля
+          </label><br>
           <input type="submit" value="Подтвердить" />
           <input type="reset" value="Очистить" />
-        </p>
+        
       </form>
     </div>
   </body>
