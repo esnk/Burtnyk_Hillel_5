@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style> html {
-        background-image: url(/images/car.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-    .main {width: 400px;height: 600px; background-color: rgba(33, 91, 95, 0.164);padding: 15px;}
-    .text-pass {margin-left: 15px;margin-top: 5px;}
-    .buttons { margin-left: 15px;margin-top: 15px;}
-    .button-sing {width: 60px;height: 40px;}
-</style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-</head>
-<body>
-    <div class="main">
-        <div>
-    <div class="text-pass"><input type="text"> <b><span style="margin-left:5px;">Email</span></b></div>
-    <div class="text-pass"><input type="password"> <b><span style="margin-left:5px;">Password</span></b></div>
-    <div class="text-pass"><input type="password"> <b><span style="margin-left:5px;">Password confirmation</span></b></div>
-</div>
-<div class="buttons">
-    <a href="/pages/search/index.html"><button class="button-sing"><b> Accept</b></button></a>
+  </head>
+  <body>
+    <div>
+      <form action="https://fom.in.ua/echo">
+        <p>
+          <label for="email"> 
+            Почта
+            <input type="email" name="email">
+          </label><br>
+          <label for="password">
+            Пароль
+            <input type="password" name="password">
+          </label><br>
+          <label for="retry-password">
+            Подтверждение  пароль
+            <input type="password" name="retry-password">
+          </label>
+          <input type="submit" value="Подтвердить" />
+          <input type="reset" value="Очистить" />
+        </p>
+      </form>
     </div>
-</body>
+  </body>
 </html>

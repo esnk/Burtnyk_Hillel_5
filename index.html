@@ -1,69 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        html {
-            background-image: url(/images/car.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-
-        .main {
-            position: fixed;
-            top: 15%;
-            left: 45%;
-            margin: -50px 0 0 -100px;
-            background-color: rgba(33, 91, 95, 0.164);
-            padding: 10px;
-            width: 320px;
-            height: 140px;
-            border-radius: 5%;
-            display: flex;
-            color: rgb(0, 0, 0);
-        }
-
-        .text-pass {
-            margin-top: 10px;
-        }
-        .sp {margin-top: 5px;margin-left: 45px;}
-
-        button {
-            margin-top: 15px;
-        }
-
-        .buttons {
-           margin-left: 30px;
-        }
-        .button-sing {width:80px;height: 45px;}
-        .button-reg {width:80px;height: 40px;}
-        .tpp { margin-top: 5px;margin-left: 10px;}
-    </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style></style>
     <title>AUTO</title>
-</head>
+  </head>
 
-<body>
-    <div class="main">
-        <div class="tpp">
-            <div class="text-pass"><input type="email"><br><b> <span style="margin-left:5px;">Login</span> </b></div>
-            <div class="text-pass"><input type="password"><br> <b><span style="margin-left:5px;">Password</span></b> </div>
-            <div class="sp"><b>Save password</b><input type="checkbox"></div>
-        </div>
-        <div class="buttons">
-            <a href="/pages/search/index.html"><button class="button-sing"><b> Sing up</b></button></a><a href="/pages/register/index.html"><button class="button-reg"><b> Register</b></button></a>
-            
-            
-        </div>
+  <body>
+    <div>
+      <form action="https://fom.in.ua/echo" method="get">
+        <p>
+          <label for="email">
+            Login
+            <input type="text" name="email" />
+            <br />
+          </label>
+          <label for="password">
+            Password
+            <input type="password"  name="password"/>
+            <br />
+          </label>
+          <label for="savepassword">
+            Запомнить пароль
+            <input type="checkbox" name="savepassword"/>
+          </label>
+          <br />
+          <input type="submit" value="Войти" />
+          <input type="reset" value="Очистить" />
+        </p>
+      </form>
     </div>
-    </div>
-</body>
-
+  </body>
 </html>
